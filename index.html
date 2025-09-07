@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> Ashok Narayanan: Portfolio </title>
+  <style>
+    :root{
+      --bg:#f7f7fb; --card:#ffffff; --ink:#0f172a; --muted:#475569; --accent:#2563eb; --line:#e5e7eb;
+      --chip:#eef2ff; --chip-ink:#3730a3;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0; font:15px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial; color:var(--ink); background:var(--bg)}
+
+    .container{max-width:980px; margin:32px auto; padding:0 20px}
+    .card{background:var(--card); border:1px solid var(--line); border-radius:18px; box-shadow:0 8px 24px rgba(2,6,23,.06)}
+
+    header{padding:28px 28px 20px; border-bottom:1px solid var(--line); text-align:center}
+    h1{font-size:36px; letter-spacing:.2px; margin:0 0 8px}
+    .headline{font-weight:500; color:var(); margin:14px auto 0; max-width:860px}
+
+    .contact{display:flex; flex-wrap:wrap; gap:10px; margin-top:12px; justify-content:center}
+    .contact a, .contact span{display:inline-flex; align-items:center; gap:8px; padding:8px 10px; border-radius:10px; background:#fafafa; border:1px solid var(--line); text-decoration:none; color:var(--ink)}
+    .contact a:hover{border-color:var(--accent)}
+
+    .cert-logos{display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-top:20px}
+    .cert-logos img{max-height:38px; object-fit:contain}
+
+    
+
+    .wrap{display:grid; grid-template-columns: 1fr; gap:8px}
+
+    .section{padding:22px 28px}
+    .section + .section{border-top:1px solid var(--line)}
+    .section h2{font-size:18px; letter-spacing:.12em; text-transform:uppercase; margin:0 0 12px}
+
+    /* Chips grid */
+    .chips{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:10px}
+    .chip{background:var(--chip); color:var(--chip-ink); border:1px solid #e0e7ff; padding:10px 12px; border-radius:12px; font-weight:600}
+
+    /* Experience */
+    .xp{display:grid; gap:14px}
+    .role{display:grid; gap:4px}
+    .role h3{margin:0; font-size:17px}
+    .meta{color:var(--muted); font-size:13px}
+
+    /* Lists */
+    ul{margin:8px 0 0 20px}
+    li{margin:4px 0}
+
+    /* Multi-column lists for long sections */
+    .list-2{columns:2; column-gap:24px}
+    .list-3{columns:3; column-gap:24px}
+    @media (max-width: 900px){.list-3{columns:2}}
+    @media (max-width: 640px){.list-3,.list-2{columns:1}}
+
+    /* Projects */
+    .project{margin:12px 0 0}
+    .project h4{margin:10px 0 6px; font-size:16px}
+    .badge{display:inline-block; font-size:12px; padding:2px 8px; border:1px solid var(--line); border-radius:999px; color:#334155; background:#f8fafc}
+
+    /* Footer / print */
+    footer{color:#6b7280; font-size:12px; text-align:center; padding:12px}
+    @media print{
+      body{background:#fff}
+      .container{margin:0; max-width:100%}
+      .card{box-shadow:none; border:0}
+      .section{padding:14px 20px}
+      .contact a[href^="http"]::after{content:" (" attr(href) ")"; color:#6b7280}
+
+
+
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <main class="card">
+      <header>
+           
+        <h1>Ashok Narayanan (CIPD, CCAHR) </h1>
+        <div class="contact" aria-label="Contact Information">
+          <span><a href="mailto:ashok.avn@outlook.com"> <b>ashok.avn@outlook.com </b></a></span>
+          <span><b>+971 56 56 83 893 </b> </span>
+          <span><a href="https://www.linkedin.com/in/ashoknarayanan/"><b>LinkedIn</a></b></span>
+         </div>
+           <h3>Dubai - United Arab Emirates</h3>   </header>
+       
+          <div class="cert-logos" aria-label="Certifications & Partners">  <header>
+
+<div class="pic-logos" aria-label="Images">
+          
+          <img src="C1.jpg" alt="C" />
+             <img src="cb1.jpg" alt="cb1" />
+             
+          <img src="j1.jpg" alt="J" />
+              
+          <img src="N1.jpg" alt="N1" />
+            
+       
+        <img src="h1.jpg" alt="H1" />
+         
+               <img src="cs1.jpg" alt="cs1" />
+             <img src="i1.jpg" alt="i1" />
+            <img src="L1.jpg" alt="L1" />
+            
+         
+          
+          <img src="N2.jpg" alt="N2" />
+             <img src="A1.jpg" alt="A1" /> 
+           <img src="K1.jpg" alt="K1" />
+             <img src="m3.jpg" alt="m3" />
+             <img src="G1.jpg" alt="G1" /> 
+          
+        
+       
+        <p class="headline">
+          A Visionary Leader blending 17+ years of global expertise with cutting-edge <b>Cognitive Frameworks, Behavioural Psychology, Generative AI 
+          </b>and <b>AI Ethics</b> to lead innovation in <b>L&amp;D, Leadership/Performance Architecture, Talent Development</b> and <b>OD Evolution</b>. 
+          Strategic and Proficient at driving innovation across multicultural ecosystems, delivering sustainable impact through 'Human-Centred and Data-Driven' 
+          Solutions.
+        </p>  </header>
+     
+
+      <div class="wrap">
+        <!-- Expertise -->
+        <section class="section" id="expertise">
+          <h2><u>Expertise & Core Competencies</u></h2>
+          <div class="chips">
+            
+            <div class="chip"><center>Talent Blending</center></div>
+            <div class="chip"><center>AI Ethics & Training</center></div>
+            <div class="chip"><center>DEIB Initiatives</center></div>
+            <div class="chip"><center>Agile Project Management</center></div>
+            <div class="chip"><center>Data & Business Analytics</center></div>
+            <div class="chip"><center>Stakeholder Management</center></div>
+            <div class="chip"><center>OD Interventions (HPO)</center></div>
+            <div class="chip"><center>Data‑Driven Instruction</center></div>
+            <div class="chip"><center>Generative AI & Enhanced Learning</center></div>
+            <div class="chip"><center>Employee Engagement / PMS</center></div>
+            <div class="chip"><center>Problem Solving</center></div>
+            <div class="chip"><center>Machine Learning, LMS Integration</center></div> 
+          </div>
+        </section>
+
+        <!-- Professional Experience -->
+        <section class="section" id="experience">
+                                                        
+                                 
+          <h2><u> Professional Experience </u></h2>
+          <div class="xp">
+            <div class="role">
+              <h3>Head – Learning & Organization Development <span class="badge">Jan 2024 – Jul 2025</span></h3>
+              <div class="meta">JEF Group — Engineering, IT, Manufacturing & Services | Bangalore (HQ), Chennai – India; Abu Dhabi – UAE, Dammam – Saudi Arabia</div>
+            </div>
+            <div class="role">
+              <h3>Senior Manager – Learning & Leadership Development <span class="badge">Jun 2013 – Dec 2023</span></h3>
+              <div class="meta">CircleLeadership — Business Solutions, Management Consulting & Auditing | India, Italy (HQ), EMEA, APAC</div>
+            </div>
+            <div class="role">
+              <h3>Manager – Training & Development <span class="badge">Oct 2010 – Apr 2013</span></h3>
+              <div class="meta">Manipal Hospitals (Manipal Health Enterprises : 12 Units) | Bangalore (HQ) – India, Nigeria, Malaysia</div>
+            </div>
+            <div class="role">
+              <h3>Manager – Learning & Development <span class="badge">Feb 2008 – Sep 2010</span></h3>
+              <div class="meta">Adelaide Corporate Solutions — IT/BPO | Chennai (HQ) – India; Brooklyn, New York – US</div>
+            </div>
+            <div class="role">
+              <h3>Training Manager <span class="badge">Sep 2006 – Feb 2008</span></h3>
+              <div class="meta">Symcon Global Technologies (SGT) — IT, KPO, Engineering | Bangalore (HQ), Chennai – India; Houston – US</div>
+            </div>
+            <div class="role">
+              <h3>Senior Soft Skills Trainer (Microsoft Research Team – Project) <span class="badge">Jul 2005 – Sep 2006</span></h3>
+              <div class="meta">Sutherland Global Services — BPO | Chennai – India ; New York(HQ) – US </div>
+            </div>
+            <div class="role">
+              <h3>Educational Consultant <span class="badge">Jun 2002 – Jul 2005</span></h3>
+              <div class="meta">Career Development Foundation | Chennai & Cochin – India; Doha – Qatar (Contractual)</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Education & Certifications -->
+        <section class="section" id="education">
+          <h2><u>Education</u></h2><div class="chip">
+          <div class="xp">
+            <div class="role">
+              <h3>Master’s Degree in Sociology <span class="badge">2014 – 2016</span></h3>
+              <div class="meta">Specialization: Social Psychology</div>
+            </div>
+            <div class="role">
+              <h3>Bachelor’s Degree in Sociology <span class="badge">1997 – 2000</span></h3>
+              <div class="meta">Specialization: General Psychology</div></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="licenses">
+          <h2><u>Licenses & Certifications</u></h2>
+          <ul class="list-2"></ul>
+             <div class="chip"> <b>Human Resources Management </b></d></div> </li>
+            <li>Human Resources Foundations - <b>Chartered Institute of Personnel & Development (CIPD), 2025</li></b>
+            <li>CCA - Human Resource Management (Advanced) - <b>University of Cambridge, 2002</li></b><br></br>
+            
+        </ul><div class="chip">
+             <b>Generative AI </b></li></d></div>
+            <li>Generative AI Productivity Skills - <b>Microsoft & LinkedIn Professional Certificate</li></b>
+            <li>Generative AI for Learning & Development - <b>LinkedIn Professional Certificate</li></b>
+            <li>Generative AI for Customer Service - <b>Microsoft 365 Copilot Professional Certificate</li></b>
+            <li>Generative AI for Supply Chain - <b>CSCMP Supply Chain Foundations Professional Certificate</li></b>
+            <li>Career Essentials in Generative AI - <b>Microsoft & LinkedIn Professional Certificate</li></b>
+            <li>Microsoft Azure AI Essentials Workloads & Machine Learning - <b>Microsoft Professional Certificate</li></b>
+            <li>Human Skills in the Age of AI - <b>Microsoft & LinkedIn Professional Certificate</li></b>
+
+             
+            
+
+        </ul><br></br>
+            <div class="chip"> <b>AI - Data Science - PMP </b></li></d></div>
+            <li>AI for Organization Leaders - <b>Microsoft & LinkedIn Professional Certificate</b></li>
+            <li>AI for Managers -<b> Microsoft & LinkedIn Professional Certificate</li></b>
+            <li>Agile Project Management - <b>Atlassian Professional Certificate</li></b>
+            <li>Data Science - <b>KNIME Professional Certificate</li></b>
+            <li>Leading Responsible AI in Organization - <b> Human Resource Associate Professional Certificate (HRCI)</li></b>
+            <li>The Future of Workforce Learning: AI‑Powered Personalization for Skill Development - <b>LinkedIn Certificate</b></li>
+            <li>Data‑Driven Learning Design - <b>National Association of State Boards of Accountancy (NASBA)</b></li><br></br>
+
+             
+
+            
+            <div class="chip"><b> Operations Management - Sales - Sustainability</b></li></d></div>
+            <li>Operations Management - <b>Jack Welch Management Institute (JWMI) Professional Certificate</b></li>
+            <li>Career Essentials in Sustainable Tech - <b>Microsoft & LinkedIn Professional Certificate</li></b>
+            <li>Sales Foundations - <b> National Association of Sales Professionals(NASP) Professional Certificate</li></b>
+            <li>DEI Awareness - <b>LinkedIn Professional Certificate</li></b>
+            <li>Driving Organizational Accountability for DEIB - <b>Society for Human Resource Management(SHRM)</li> </b>
+            <li>Six Sigma – Black Belt - <b>International Institute of Business Analysis™ (IIBA®)</li> </b>
+            <li>Six Sigma – Green Belt - <b>Project Management Institute(PMI)</li></b>
+            <li>Building High‑Performance Teams - <b>National Association of State Boards of Accountancy (NASBA)</li></b>
+            <li>Master Certificate in Business Management - <b>Master Class Management, 2013</li>
+</b>          </ul>
+        </section>
+
+        <!-- Computer Knowledge -->
+        <section class="section" id="computer-knowledge">
+          <h2><u>Computer Knowledge</u></h2><div class="chip">
+          <ul class="list-2">
+            <li>Career Essentials in GitHub Copilot - <b>GitHub Professional Certificate</li>
+</b>            <li>Higher Diploma in Software Engineering (HDSE) - <b>APTECH</li></b>
+            <li><b>LinkedIn Certificates -</b> Microsoft Power BI, SAP S/4HANA, SAP SuccessFactors </li>
+</b>            <li><b>MS Office (Suite) Certified Professional</b>: Word, Excel, PowerPoint (Advanced) - <b>APTECH </b></li>
+            <li><b>Languages/Stacks</b>: C, C++, C#, Java, HTML, XML, ASP, JSP, Python, FoxPro, Oracle 8i, MySQL, PHP4</li></div>
+          </ul>
+        </section>
+
+        <!-- Tools -->
+        <section class="section" id="tools">
+          <h2><u>Tools</u></h2>
+          <ul class="list-3">
+            <li><strong>Project Management:</strong> Jira, Microsoft Power BI, Trello, SAP S/4HANA, SaaS (HRM)</li>
+            <li><strong>HCM:</strong> BambooHR, SAP SuccessFactors, Darwinbox (HRMS), CSOD</li>
+            <li><strong>LMS & E‑Learning:</strong> Moodle, SAP Enable Now, Canvas, SABA, Docebo</li>
+         <li><strong>Assessments:</strong> DiSC Workplace, SHL, MBTI tools</li>
+          
+        </section>
+
+        <!-- Languages -->
+        <section class="section" id="languages">
+          <h2><u>Languages </u>(Speak/Read/Write) </h2><div class="chip">
+          <p><li><b>English, Hindi, Japanese©, Italian, Malayalam, Kannada, Tamil, Telugu </b></p></li></div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section" id="projects">
+          </ul><h1><center> <u>Projects : Performance  : Outcomes </u></h1></ul>
+
+
+
+          <div class="project">
+              <div class="chip"> <h4> TRANSFORMATION PROGRAMS : Across 4 Divisions,5 Locations (India, UAE, Saudi Arabia) </h4></div>
+            <h4>PROJECT 1- Horizon: “Leadership Open House Series” <span class="badge">JEF Group</span></h4>
+            <ul><li>Advancing DEIB, Transparency & Cross‑vertical Trust </li>
+            <li>Launched weekly, monthly & quarterly Open House forums for senior leaders & managers</li>
+<li>Elevated diverse voices; promoted psychological safety and active listening</li>
+<li>Bridged equity gaps, strengthened cross‑cultural understanding and fair decision‑making</li>
+<li>Improved alignment, transparency, upward communication; enhanced trust,reduced silos</li>
+
+
+         
+          </div>
+
+          <div class="project">
+            <h4>PROJECT 2- JEFSeed: “L&D Academy” <span class="badge">JEF Group</span></h4>
+             
+ 
+              
+              <p><strong>L&D Academy Launch:</strong> Established a dedicated <b>'Learning Hub'</b>for Technical, AI, Functional, Managerial & Leadership Talent</p>
+
+<ul><li>Launched a digital-first internal L&D Academy to personalise learning journeys and track real-time progress</li>
+<li>Built a scalable ecosystem integrating LMS, leadership pathways, and capability frameworks across business units</li>
+<li>Developed a Centralised Learning Hub aligned to organizational goals with modules and manager-driven coaching</li>
+<li>Implemented Structured Programs to close skill gaps, enhance onboarding, and build a future-ready workforce</li></ul>
+
+            
+
+          <div class="project">
+            <h4>PROJECT 3- Sales Team Excellence <span class="badge">JEF Group</span></h4>
+            <ul> 
+              <li>Used GenAI for personalized outreach and simulated objection handling</li>
+              <li>Upskilling for Products & Technical Services Teams (Team size-43)</li>
+
+<li>Enabled personalised outreach by leveraging GenAI to tailor messaging and customer engagement</li></ul>
+
+          </div>
+
+          <div class="project">
+            <h4>PROJECT 4- Size & Elevate: Business Units and Unit Heads Acceleration <span class="badge">JEF Group</span></h4><ul>
+            
+ 
+              <li>Growth pathway for Building 3 Business Units</li>
+              <li> Six Mid‑level Managers to become Business Units Heads (Technical Services, Product Design and Product Sales)</li>
+              <li>Integrated competency  mapping, mentoring, and strategic exposure assignments</li>
+<li>Resulted in visible readiness and stronger Succession Pipeline</li>
+              
+            </ul>
+          </div>
+
+          <div class="project">
+            <h4>PROJECT 5- Structure & Align: Skill Gap Analysis (4 Divisions; 5 Locations) <span class="badge">JEF Group</span></h4>
+            <ul>
+              <li>Improved Workforce Planning, Optimized Manpower Planning and Recruitment</li>
+<li>Scaled the Training and Development needs</li>
+
+<li>Increased Employee Engagement,Performance and Enhance Competitiveness</li>
+
+<li>Enabled Targeted Interventions, Role Clarity, and Capability Planning</li>
+             
+            </ul>
+          </div>
+
+          <div class="project">
+            <h4>PROJECT 6- The Learning Leap: Presentation Mastery for Senior Leaders (Team size-27) <span class="badge">JEF Group</span></h4>
+            <ul>
+              <li>Built narrative framing, data storytelling, stakeholder engagement capabilities</li>
+             
+<li>Strengthened 'Leadership Visibility' across Functions</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h4>PROJECT 7- Thrive: PMS & Engagement Framework (4 Divisions) <span class="badge">JEF Group</span></h4>
+            <ul>
+              <li>Rolled out a unified Performance Management System with 'The Champions - Engagement Anchors'</li>
+              
+
+              
+
+            </ul>
+          </div>
+
+          <div class="project">
+            <h4>PROJECT 8- PowerSync: PSCAD & ETAP Technical Upgrade <span class="badge">JEF Group</span></h4><ul>
+            
+              <li>Upskilled 21‑member tech team on latest PSCAD & ETAP tools,Reduced system lag by 32%</li>
+             
+           
+           </ul>
+<br</br>
+ <p><center><h4><strong>EIGHT PROJECTS : IMPACT AND OUTCOMES (18 mos)</strong></h4></center></p>
+            <div class="chip"><ul>
+              <li>Training Engagement <b>↑ 43%</b> in 7 mos; Team Interactions <b>↑ 36% </b> ; Reducing Training Expenses by <b>↑ 19%</b></li>
+              <li>Employee Engagement <b>↑ 21%</b>; Cross‑Functional Collaboration<b> ↑ 33%</b>; Product Sales <b>↑ 17% </b>Uplift</li>
+              <li>Internal Branding visibility <b>↑ 55%</b>; Tech Trainings (AM & Manager‑led) <b>↑ 23% </b>;Tech Services Improvement <b>↑ 30%</b></li>
+              <li>Learner Satisfaction <b>from 1.2 to 3.3</b>; Leadership Bench Strength <b>↑ 27%</b>; Retention and Promotions <b>↑ 10% to 20% </b></li></div> </ul>
+            </ul>
+          </div>
+            
+           <br></br> 
+           <div> <a href="jef_projects1.html" target="_blank"><center><b><h3> JEF Projects Dashboard : Metrics Overview </h3></center></b></a> <br> </br></div>
+
+            
+
+          <div class="project">   <div class="chip">
+            <h4>PROJECTS : Strategic L&D and Leadership Frameworks (India, Italy, EMEA, APAC) <span class="badge">
+CircleLeadership(CL) - Management| Business Solutions| Auditing</span></h4>
+
+            </div>
+      <p> Strategic L&D Consultant across <b>7 Countries</b>; formulated and executed <b>21 High-Impact projects</b> with <b>12 Leads/Trainers</b>, embedding global models (GLEAM, ADDIE, ADKAR, Kotter) to deliver 30%+ improvement in client satisfaction, 25% faster adoption, and measurable business outcomes across 11+ Industries. </p>
+
+              
+
+           
+<p><b>PROJECT 1 – Leadership Reengineering <span class="badge"> CL Team</span><ul></p></b>
+              
+  <li>Reengineered Leadership Development Programs in MNCs using GLEAM & AMLT Model</li>
+  <li>Applied GLEAM model (Goal–Learn–Execute–Assess–Motivate) to align L&D programs with organizational KPIs</li>
+  <li>Designed and deployed IDPs (Individual Development Plans),tailored to high-potential leaders</li>
+  <li>Achieved 28% higher succession readiness and 20% uplift in team performance</li>
+</ul>
+        
+
+  <p><b>PROJECT 2 – Change Enablement:Culture & Change Integration<span class="badge"> CL Team</span></b></p><ul>
+
+  <li>Applied ADDIE framework with ADKAR & Kotter’s models for large-scale change</li>
+  <li>Built KPI dashboards to measure time, cost, scope, and quality in learning rollouts</li>
+  <li>Delivered 25% faster adoption rates and 15% reduction in training costs</li></ul>
+
+
+     
+            
+
+  <p><b>PROJECT 3 - Workforce Learning & Coaching<span class="badge"> CL Team</span></p></b><ul>
+
+  <li>Personalized learning domains across <b> IT, Healthcare, Banking, Insurance, Retail, Airline, Real Estate, Oil & Gas, Engineering, Automotive, Manufacturing </b>Sectors</li>
+  <li>Drove increase in employee engagement and 33% client satisfaction growth</li>
+ 
+              
+
+            </ul>
+          </div>
+        <br></br>
+
+             <div> <a href="cl_projects2.html" target="_blank"><center><b> <h3>CL Projects Dashboard : Metrics Overview  </h3></center></b></a> <br> </br></div>
+            
+          <div class="project"> <div class="chip">
+            <h4>PROJECTS : Integrated Training & Development Transformation in Healthcare (India, Nigeria, Malaysia) <span class="badge">Manipal Hospitals Group (Manipal Health Enterprises Private Limited-MHE) </span></h4></div>
+             <p><b>  12 Hospitals, 7 Clinics (16 Locations: National & International)  </b></p>
+            
+            <p><b>PROJECT 1: Strategic Alignment – Vision & Mission to Performance<span class="badge"> MHE Group</span></b></p><ul>
+
+<li>Aligned vision & mission with a new performance evaluation framework for hospitals & clinics</li>
+<li>Collaborated with marketing team for new logo launch, aligning L&D initiatives with 'Brand-Building' and 'Awareness Campaigns'</li>
+<li>Established structured goal-setting systems linked to organizational outcomes</li>
+</ul>
+
+<p><b>PROJECT 2: LMS Integration & OD Initiatives<span class="badge"> MHE Group</span></b></p><ul>
+<li>Implemented an LMS platform, boosting learning assessment scores across hospitals & clinics</li>
+<li>Brought L&D under one single umbrella with the support of the HR Head & team for unified governance</li>
+</ul>
+
+<p><b>PROJECT 3: Cross-Functional Teams & Engagement<span class="badge"> MHE Group</span></b></p><ul>
+
+
+<li>Achieved 21% improvement in employee engagement scores across units</li>
+<li>Deployed HR and Training collaboration across all 12 units to co-design engagement campaigns</li>
+<li>Enhanced workplace satisfaction, reducing voluntary attrition by 19%</li></ul>
+
+<p><b>PROJECT 4: Enabled Learning – MDP, IDP, Skill Building<span class="badge"> MHE Group</span></b></p><ul>
+
+<li>Delivered 26% improvement in leadership competency scores through structured IDPs</li>
+<li>Achieved 19% faster skill adoption across units by leveraging shared learning modules </li></ul>
+
+<p><b>PROJECT 5: Building Training Champions – TTT Model for Operational Excellence<span class="badge"> MHE Group</span></b></p><ul>
+
+
+<li>Reduced external training dependency by 22%, building internal capacity</li>
+<li>Fostered a peer-led coaching culture across teams/units, strengthening organizational agility</li></ul>
+
+
+
+          </div>
+        </section>
+
+        </div>
+    <div> <a href="mhe_projects3.html" target="_blank"><center><b> <h3>MHE Projects Dashboard : Metrics Overview </h3> </center></b></a> <br> </br></div>
+      
+      <div class="center-div"><ul>
+
+
+    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="ashoknarayanan" data-version="v1"></div> 
+              
+      <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script></div></u>
+
+        
+    </main>
+
+            
+    
+    <footer>©<script>document.write(new Date().getFullYear())</script> ASHOK NARAYANAN(AVN) • </footer>
+  </div>
+</body>
+</html>
